@@ -1,0 +1,6 @@
+{
+  "name": "spring-boot-boilerplate",
+  "description": "Starter project to develop REST APIs with Spring Boot and Gradle",
+  "repository": "https://github.com/cristiangreco/spring-boot-boilerplate",
+  "keywords": ["java", "spring", "spring-boot", "springboot", "gradle"]
+}
