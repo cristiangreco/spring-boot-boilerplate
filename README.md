@@ -1,6 +1,10 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 # Spring Boot boilerplate
+
+---
+
+[![Build Status](https://travis-ci.org/cristiangreco/spring-boot-boilerplate.svg?branch=master)](https://travis-ci.org/cristiangreco/spring-boot-boilerplate)
  
 Quick start for Spring Boot and Gradle.
 
