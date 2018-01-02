@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.9.RELEASE'
+        springBootVersion = "1.5.9.RELEASE"
     }
     repositories {
         mavenCentral()
@@ -14,12 +14,12 @@ repositories {
     mavenCentral()
 }
 
-apply plugin: 'java'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+apply plugin: "java"
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
 
-group = 'com.example'
-version = '0.1.0'
+group = "com.example"
+version = "0.1.0"
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
