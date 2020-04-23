@@ -8,6 +8,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
       - name: Update Gradle Wrapper
         uses: rahulsom/gradle-up@v0.1.0
         env:
