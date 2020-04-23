@@ -11,6 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Update Gradle Wrapper
-        uses: rahulsom/gradle-up@v0.1.0
+        uses: rahulsom/gradle-up@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
