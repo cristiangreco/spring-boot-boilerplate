@@ -1,0 +1,16 @@
+name: update-gradle-wrapper
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Update Gradle Wrapper
+        uses: rahulsom/gradle-up@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
