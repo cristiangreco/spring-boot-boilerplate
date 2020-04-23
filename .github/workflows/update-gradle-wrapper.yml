@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Gradle Wrapper
+        uses: rahulsom/gradle-up@v0.1.0
