@@ -1,8 +1,8 @@
-name: CI
+name: update-gradle-wrapper
 
 on:
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "0 21 * * *"
 
 jobs:
   update:
@@ -10,3 +10,5 @@ jobs:
     steps:
       - name: Update Gradle Wrapper
         uses: rahulsom/gradle-up@v0.1.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
