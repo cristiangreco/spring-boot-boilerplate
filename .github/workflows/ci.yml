@@ -15,14 +15,13 @@ jobs:
           - macos-latest
           - windows-latest
         java:
-          - 8
-          - 9
-          - 10
           - 11
           - 12
           - 13
           - 14
           - 15
+          - 16
+          - 17
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.os }} - Java ${{ matrix.java }}
     steps:
