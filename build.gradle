@@ -1,27 +1,17 @@
-buildscript {
-    ext {
-        springBootVersion = "2.4.5"
-    }
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
+plugins {
+    id 'org.springframework.boot' version '2.5.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
 }
 
 repositories {
     mavenCentral()
 }
 
-apply plugin: "java"
-apply plugin: "org.springframework.boot"
-apply plugin: "io.spring.dependency-management"
-
 group = "com.example"
 version = "0.1.0"
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
